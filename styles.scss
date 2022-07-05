@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,600&family=Oswald&family=Source+Sans+Pro:ital,wght@1,600&family=Staatliches&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+.left-panel {
+    background-image: url("bg.jpg");
+    font-family: 'Oswald', sans-serif;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    margin: 0;
+    display: flex;
+}
+
+.left-panel {
+    width: 40%;
+    height: 100vh;
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.right-panel {
+    width: 60%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 50px;
+}
+
+fieldset {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+fieldset div {
+    margin: 15px 25px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row div {
+    position: relative;
+}
+
+legend {
+    position: relative;
+    top: 10px;
+    font-size: 1.8em;
+}
+
+label {
+    position: absolute;
+    top: -20px;
+    font-size: 1.2em;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 2px;
+}
