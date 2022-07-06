@@ -24,6 +24,7 @@ body {
 
 .form {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 2%;
 }
 
 .left-panel {
@@ -43,7 +44,9 @@ body {
 }
 
 .right-text {
+  font-size: 50px;
   padding: 0 5%;
+  margin-top: 8%;
 }
 
 fieldset {
@@ -57,10 +60,17 @@ fieldset {
 }
 
 .submit {
+  font-size: 40px;
   margin-left: 5%;
   margin-top: -30px;
-  width: 125px;
-  height: 30px;
+  width: 200px;
+  border: solid black 2px;
+  border-radius: 5px;
+}
+
+.submit:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.5s;
 }
 
 fieldset div {
@@ -85,6 +95,7 @@ legend {
   position: relative;
   top: 1px;
   font-size: 1.8em;
+  padding-top: 5px;
 }
 
 label {
@@ -102,6 +113,29 @@ input {
   height: 30px;
   border-radius: 5px;
   margin-top: 2px;
+}
+
+input + span {
+  position: relative;
+}
+
+input:required + span::before {
+  font-size: 0.7em;
+  position: absolute;
+  content: "required";
+  padding: 2px 7px;
+  top: -19px;
+  left: -70px;
+}
+
+input:required:valid + span::before {
+  content: '✓';
+  color: green;
+}
+
+input:required:invalid:focus + span::before {
+  content: '✖';
+  color: red;
 }
 
 input:focus {
